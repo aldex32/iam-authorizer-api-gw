@@ -1,0 +1,17 @@
+service: iam-authorized-api-gw
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+  region: eu-central-1
+  profile: ${opt:profile, 'taiichidev'}
+  stage: ${opt:stage, 'dev'}
+
+functions:
+  hello:
+    handler: handler.hello
+    events:
+      - http:
+          path: /
+          method: get
+          authorizer: aws_iam

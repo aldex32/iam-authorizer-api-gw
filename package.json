@@ -1,0 +1,21 @@
+{
+  "name": "iam-authorizer-api-gw",
+  "version": "1.0.0",
+  "description": "",
+  "main": "handler.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "aws4": "^1.9.1",
+    "chai": "^4.2.0",
+    "mocha": "^7.0.1",
+    "request": "^2.88.2",
+    "request-promise-native": "^1.0.8",
+    "serverless": "^1.63.0",
+    "url": "^0.11.0"
+  }
+}
